@@ -63,7 +63,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the Orders property.
      *
      * @param array orders
-     * @return this instance
+     * @return $this instance
      */
     public function setOrders($value)
     {
@@ -98,7 +98,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param orders
      *             New values to add.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withOrders()
     {

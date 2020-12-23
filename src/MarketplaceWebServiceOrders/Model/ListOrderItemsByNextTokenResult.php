@@ -63,7 +63,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the NextToken property.
      *
      * @param string nextToken
-     * @return this instance
+     * @return $this instance
      */
     public function setNextToken($value)
     {
@@ -87,7 +87,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param nextToken
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withNextToken($value)
     {
@@ -109,7 +109,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the AmazonOrderId property.
      *
      * @param string amazonOrderId
-     * @return this instance
+     * @return $this instance
      */
     public function setAmazonOrderId($value)
     {
@@ -133,7 +133,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param amazonOrderId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withAmazonOrderId($value)
     {
@@ -159,7 +159,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the OrderItems property.
      *
      * @param array orderItems
-     * @return this instance
+     * @return $this instance
      */
     public function setOrderItems($value)
     {
@@ -194,7 +194,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param orderItems
      *             New values to add.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withOrderItems()
     {

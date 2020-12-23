@@ -65,7 +65,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the NextToken property.
      *
      * @param string nextToken
-     * @return this instance
+     * @return $this instance
      */
     public function setNextToken($value)
     {
@@ -89,7 +89,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param nextToken
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withNextToken($value)
     {
@@ -111,7 +111,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the CreatedBefore property.
      *
      * @param string createdBefore
-     * @return this instance
+     * @return $this instance
      */
     public function setCreatedBefore($value)
     {
@@ -135,7 +135,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param createdBefore
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withCreatedBefore($value)
     {
@@ -157,7 +157,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the LastUpdatedBefore property.
      *
      * @param string lastUpdatedBefore
-     * @return this instance
+     * @return $this instance
      */
     public function setLastUpdatedBefore($value)
     {
@@ -181,7 +181,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param lastUpdatedBefore
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withLastUpdatedBefore($value)
     {
@@ -207,7 +207,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the Orders property.
      *
      * @param array orders
-     * @return this instance
+     * @return $this instance
      */
     public function setOrders($value)
     {
@@ -242,7 +242,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param orders
      *             New values to add.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withOrders()
     {

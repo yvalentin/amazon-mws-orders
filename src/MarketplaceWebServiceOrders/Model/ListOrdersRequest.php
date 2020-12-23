@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2017 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -18,18 +18,18 @@
  */
 
 /**
- *  @see MarketplaceWebServiceOrders_Model
+ * @see MarketplaceWebServiceOrders_Model
  */
 
-require_once (dirname(__FILE__) . '/../Model.php');
+require_once(dirname(__FILE__) . '/../Model.php');
 
 
 /**
  * MarketplaceWebServiceOrders_Model_ListOrdersRequest
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>SellerId: string</li>
  * <li>MWSAuthToken: string</li>
  * <li>CreatedAfter: string</li>
@@ -47,28 +47,28 @@ require_once (dirname(__FILE__) . '/../Model.php');
  *
  * </ul>
  */
-
- class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWebServiceOrders_Model {
+class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWebServiceOrders_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'CreatedAfter' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'CreatedBefore' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'LastUpdatedAfter' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'LastUpdatedBefore' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'OrderStatus' => array('FieldValue' => array(), 'FieldType' => array('string'), 'ListMemberName' => 'Status'),
-    'MarketplaceId' => array('FieldValue' => array(), 'FieldType' => array('string'), 'ListMemberName' => 'Id'),
-    'FulfillmentChannel' => array('FieldValue' => array(), 'FieldType' => array('string'), 'ListMemberName' => 'Channel'),
-    'PaymentMethod' => array('FieldValue' => array(), 'FieldType' => array('string'), 'ListMemberName' => 'Method'),
-    'BuyerEmail' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'SellerOrderId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'MaxResultsPerPage' => array('FieldValue' => null, 'FieldType' => 'int'),
-    'TFMShipmentStatus' => array('FieldValue' => array(), 'FieldType' => array('string'), 'ListMemberName' => 'Status'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'CreatedAfter' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'CreatedBefore' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'LastUpdatedAfter' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'LastUpdatedBefore' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'OrderStatus' => array('FieldValue' => array(), 'FieldType' => array('string'), 'ListMemberName' => 'Status'),
+            'MarketplaceId' => array('FieldValue' => array(), 'FieldType' => array('string'), 'ListMemberName' => 'Id'),
+            'FulfillmentChannel' => array('FieldValue' => array(), 'FieldType' => array('string'), 'ListMemberName' => 'Channel'),
+            'PaymentMethod' => array('FieldValue' => array(), 'FieldType' => array('string'), 'ListMemberName' => 'Method'),
+            'BuyerEmail' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'SellerOrderId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'MaxResultsPerPage' => array('FieldValue' => null, 'FieldType' => 'int'),
+            'TFMShipmentStatus' => array('FieldValue' => array(), 'FieldType' => array('string'), 'ListMemberName' => 'Status'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -85,7 +85,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the SellerId property.
      *
      * @param string sellerId
-     * @return this instance
+     * @return $this instance
      */
     public function setSellerId($value)
     {
@@ -100,8 +100,8 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function isSetSellerId()
     {
-                return !is_null($this->_fields['SellerId']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerId']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerId, return this.
@@ -109,7 +109,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param sellerId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withSellerId($value)
     {
@@ -131,7 +131,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the MWSAuthToken property.
      *
      * @param string mwsAuthToken
-     * @return this instance
+     * @return $this instance
      */
     public function setMWSAuthToken($value)
     {
@@ -146,8 +146,8 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function isSetMWSAuthToken()
     {
-                return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
-            }
+        return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
+    }
 
     /**
      * Set the value of MWSAuthToken, return this.
@@ -155,7 +155,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param mwsAuthToken
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withMWSAuthToken($value)
     {
@@ -177,7 +177,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the CreatedAfter property.
      *
      * @param string createdAfter
-     * @return this instance
+     * @return $this instance
      */
     public function setCreatedAfter($value)
     {
@@ -192,8 +192,8 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function isSetCreatedAfter()
     {
-                return !is_null($this->_fields['CreatedAfter']['FieldValue']);
-            }
+        return !is_null($this->_fields['CreatedAfter']['FieldValue']);
+    }
 
     /**
      * Set the value of CreatedAfter, return this.
@@ -201,7 +201,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param createdAfter
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withCreatedAfter($value)
     {
@@ -223,7 +223,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the CreatedBefore property.
      *
      * @param string createdBefore
-     * @return this instance
+     * @return $this instance
      */
     public function setCreatedBefore($value)
     {
@@ -238,8 +238,8 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function isSetCreatedBefore()
     {
-                return !is_null($this->_fields['CreatedBefore']['FieldValue']);
-            }
+        return !is_null($this->_fields['CreatedBefore']['FieldValue']);
+    }
 
     /**
      * Set the value of CreatedBefore, return this.
@@ -247,7 +247,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param createdBefore
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withCreatedBefore($value)
     {
@@ -269,7 +269,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the LastUpdatedAfter property.
      *
      * @param string lastUpdatedAfter
-     * @return this instance
+     * @return $this instance
      */
     public function setLastUpdatedAfter($value)
     {
@@ -284,8 +284,8 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function isSetLastUpdatedAfter()
     {
-                return !is_null($this->_fields['LastUpdatedAfter']['FieldValue']);
-            }
+        return !is_null($this->_fields['LastUpdatedAfter']['FieldValue']);
+    }
 
     /**
      * Set the value of LastUpdatedAfter, return this.
@@ -293,7 +293,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param lastUpdatedAfter
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withLastUpdatedAfter($value)
     {
@@ -315,7 +315,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the LastUpdatedBefore property.
      *
      * @param string lastUpdatedBefore
-     * @return this instance
+     * @return $this instance
      */
     public function setLastUpdatedBefore($value)
     {
@@ -330,8 +330,8 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function isSetLastUpdatedBefore()
     {
-                return !is_null($this->_fields['LastUpdatedBefore']['FieldValue']);
-            }
+        return !is_null($this->_fields['LastUpdatedBefore']['FieldValue']);
+    }
 
     /**
      * Set the value of LastUpdatedBefore, return this.
@@ -339,7 +339,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param lastUpdatedBefore
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withLastUpdatedBefore($value)
     {
@@ -354,8 +354,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function getOrderStatus()
     {
-        if ($this->_fields['OrderStatus']['FieldValue'] == null)
-        {
+        if ($this->_fields['OrderStatus']['FieldValue'] == null) {
             $this->_fields['OrderStatus']['FieldValue'] = array();
         }
         return $this->_fields['OrderStatus']['FieldValue'];
@@ -365,12 +364,12 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the OrderStatus property.
      *
      * @param array orderStatus
-     * @return this instance
+     * @return $this instance
      */
     public function setOrderStatus($value)
     {
         if (!$this->_isNumericArray($value)) {
-            $value = array ($value);
+            $value = array($value);
         }
         $this->_fields['OrderStatus']['FieldValue'] = $value;
         return $this;
@@ -391,8 +390,8 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function isSetOrderStatus()
     {
-                return !empty($this->_fields['OrderStatus']['FieldValue']);
-            }
+        return !empty($this->_fields['OrderStatus']['FieldValue']);
+    }
 
     /**
      * Add values for OrderStatus, return this.
@@ -400,12 +399,11 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param orderStatus
      *             New values to add.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withOrderStatus()
     {
-        foreach (func_get_args() as $OrderStatus)
-        {
+        foreach (func_get_args() as $OrderStatus) {
             $this->_fields['OrderStatus']['FieldValue'][] = $OrderStatus;
         }
         return $this;
@@ -418,8 +416,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function getMarketplaceId()
     {
-        if ($this->_fields['MarketplaceId']['FieldValue'] == null)
-        {
+        if ($this->_fields['MarketplaceId']['FieldValue'] == null) {
             $this->_fields['MarketplaceId']['FieldValue'] = array();
         }
         return $this->_fields['MarketplaceId']['FieldValue'];
@@ -429,12 +426,12 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the MarketplaceId property.
      *
      * @param array marketplaceId
-     * @return this instance
+     * @return $this instance
      */
     public function setMarketplaceId($value)
     {
         if (!$this->_isNumericArray($value)) {
-            $value = array ($value);
+            $value = array($value);
         }
         $this->_fields['MarketplaceId']['FieldValue'] = $value;
         return $this;
@@ -455,8 +452,8 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function isSetMarketplaceId()
     {
-                return !empty($this->_fields['MarketplaceId']['FieldValue']);
-            }
+        return !empty($this->_fields['MarketplaceId']['FieldValue']);
+    }
 
     /**
      * Add values for MarketplaceId, return this.
@@ -464,12 +461,11 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param marketplaceId
      *             New values to add.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withMarketplaceId()
     {
-        foreach (func_get_args() as $MarketplaceId)
-        {
+        foreach (func_get_args() as $MarketplaceId) {
             $this->_fields['MarketplaceId']['FieldValue'][] = $MarketplaceId;
         }
         return $this;
@@ -482,8 +478,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function getFulfillmentChannel()
     {
-        if ($this->_fields['FulfillmentChannel']['FieldValue'] == null)
-        {
+        if ($this->_fields['FulfillmentChannel']['FieldValue'] == null) {
             $this->_fields['FulfillmentChannel']['FieldValue'] = array();
         }
         return $this->_fields['FulfillmentChannel']['FieldValue'];
@@ -493,12 +488,12 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the FulfillmentChannel property.
      *
      * @param array fulfillmentChannel
-     * @return this instance
+     * @return $this instance
      */
     public function setFulfillmentChannel($value)
     {
         if (!$this->_isNumericArray($value)) {
-            $value = array ($value);
+            $value = array($value);
         }
         $this->_fields['FulfillmentChannel']['FieldValue'] = $value;
         return $this;
@@ -519,8 +514,8 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function isSetFulfillmentChannel()
     {
-                return !empty($this->_fields['FulfillmentChannel']['FieldValue']);
-            }
+        return !empty($this->_fields['FulfillmentChannel']['FieldValue']);
+    }
 
     /**
      * Add values for FulfillmentChannel, return this.
@@ -528,12 +523,11 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param fulfillmentChannel
      *             New values to add.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withFulfillmentChannel()
     {
-        foreach (func_get_args() as $FulfillmentChannel)
-        {
+        foreach (func_get_args() as $FulfillmentChannel) {
             $this->_fields['FulfillmentChannel']['FieldValue'][] = $FulfillmentChannel;
         }
         return $this;
@@ -546,8 +540,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function getPaymentMethod()
     {
-        if ($this->_fields['PaymentMethod']['FieldValue'] == null)
-        {
+        if ($this->_fields['PaymentMethod']['FieldValue'] == null) {
             $this->_fields['PaymentMethod']['FieldValue'] = array();
         }
         return $this->_fields['PaymentMethod']['FieldValue'];
@@ -557,12 +550,12 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the PaymentMethod property.
      *
      * @param array paymentMethod
-     * @return this instance
+     * @return $this instance
      */
     public function setPaymentMethod($value)
     {
         if (!$this->_isNumericArray($value)) {
-            $value = array ($value);
+            $value = array($value);
         }
         $this->_fields['PaymentMethod']['FieldValue'] = $value;
         return $this;
@@ -583,8 +576,8 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function isSetPaymentMethod()
     {
-                return !empty($this->_fields['PaymentMethod']['FieldValue']);
-            }
+        return !empty($this->_fields['PaymentMethod']['FieldValue']);
+    }
 
     /**
      * Add values for PaymentMethod, return this.
@@ -592,12 +585,11 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param paymentMethod
      *             New values to add.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withPaymentMethod()
     {
-        foreach (func_get_args() as $PaymentMethod)
-        {
+        foreach (func_get_args() as $PaymentMethod) {
             $this->_fields['PaymentMethod']['FieldValue'][] = $PaymentMethod;
         }
         return $this;
@@ -617,7 +609,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the BuyerEmail property.
      *
      * @param string buyerEmail
-     * @return this instance
+     * @return $this instance
      */
     public function setBuyerEmail($value)
     {
@@ -632,8 +624,8 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function isSetBuyerEmail()
     {
-                return !is_null($this->_fields['BuyerEmail']['FieldValue']);
-            }
+        return !is_null($this->_fields['BuyerEmail']['FieldValue']);
+    }
 
     /**
      * Set the value of BuyerEmail, return this.
@@ -641,7 +633,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param buyerEmail
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withBuyerEmail($value)
     {
@@ -663,7 +655,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the SellerOrderId property.
      *
      * @param string sellerOrderId
-     * @return this instance
+     * @return $this instance
      */
     public function setSellerOrderId($value)
     {
@@ -678,8 +670,8 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function isSetSellerOrderId()
     {
-                return !is_null($this->_fields['SellerOrderId']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerOrderId']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerOrderId, return this.
@@ -687,7 +679,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param sellerOrderId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withSellerOrderId($value)
     {
@@ -709,7 +701,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the MaxResultsPerPage property.
      *
      * @param int maxResultsPerPage
-     * @return this instance
+     * @return $this instance
      */
     public function setMaxResultsPerPage($value)
     {
@@ -724,8 +716,8 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function isSetMaxResultsPerPage()
     {
-                return !is_null($this->_fields['MaxResultsPerPage']['FieldValue']);
-            }
+        return !is_null($this->_fields['MaxResultsPerPage']['FieldValue']);
+    }
 
     /**
      * Set the value of MaxResultsPerPage, return this.
@@ -733,7 +725,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param maxResultsPerPage
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withMaxResultsPerPage($value)
     {
@@ -748,8 +740,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function getTFMShipmentStatus()
     {
-        if ($this->_fields['TFMShipmentStatus']['FieldValue'] == null)
-        {
+        if ($this->_fields['TFMShipmentStatus']['FieldValue'] == null) {
             $this->_fields['TFMShipmentStatus']['FieldValue'] = array();
         }
         return $this->_fields['TFMShipmentStatus']['FieldValue'];
@@ -759,12 +750,12 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * Set the value of the TFMShipmentStatus property.
      *
      * @param array tfmShipmentStatus
-     * @return this instance
+     * @return $this instance
      */
     public function setTFMShipmentStatus($value)
     {
         if (!$this->_isNumericArray($value)) {
-            $value = array ($value);
+            $value = array($value);
         }
         $this->_fields['TFMShipmentStatus']['FieldValue'] = $value;
         return $this;
@@ -785,8 +776,8 @@ require_once (dirname(__FILE__) . '/../Model.php');
      */
     public function isSetTFMShipmentStatus()
     {
-                return !empty($this->_fields['TFMShipmentStatus']['FieldValue']);
-            }
+        return !empty($this->_fields['TFMShipmentStatus']['FieldValue']);
+    }
 
     /**
      * Add values for TFMShipmentStatus, return this.
@@ -794,12 +785,11 @@ require_once (dirname(__FILE__) . '/../Model.php');
      * @param tfmShipmentStatus
      *             New values to add.
      *
-     * @return This instance.
+     * @return $this instance.
      */
     public function withTFMShipmentStatus()
     {
-        foreach (func_get_args() as $TFMShipmentStatus)
-        {
+        foreach (func_get_args() as $TFMShipmentStatus) {
             $this->_fields['TFMShipmentStatus']['FieldValue'][] = $TFMShipmentStatus;
         }
         return $this;
